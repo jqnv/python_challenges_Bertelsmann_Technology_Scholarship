@@ -1,0 +1,22 @@
+# Option 1 Difficulty Level: Elementary: In this exercise you will
+# create a program that displays a multiplication table that shows
+# the products of all combinations of integers from 1 times 1 up to and
+# including 10 times 10. Your multiplication table should include a row of
+# labels across the top of it containing the numbers 1 through 10.
+# It should also include labels down the left side consisting of
+# the numbers 1 through 10. The expected output from the program is shown...
+def multiplication_table():
+    table = []
+    for i in range(1, 11):
+        table.append(list(range(i, i * 10 + 1, i)))
+    for n in range(1, 11):
+        print("\t", n, end="")
+    print("")
+    for i in range(10):
+        print(i + 1, end="")
+        for j in range(10):
+            print("\t", table[i][j], end="")
+        print("")
+
+
+multiplication_table()
