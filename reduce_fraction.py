@@ -18,6 +18,5 @@ def reduce_fraction(num, den):
 
 num = int(input("Please enter the numerator of the fraction to reduce: "))
 den = int(input("Please enter the denominator of the fraction to reduce: "))
-
 if __name__ == '__main__':
     reduce_fraction(num, den)
