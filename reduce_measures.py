@@ -16,27 +16,30 @@
 # is equivalent to 3 teaspoons.
 
 def reduce_measure(u, u_m):
-    if u_m=="a": cup, tablespoon, teaspoon=get_from_teaspoon(u)
-    if u_m=="b": cup, tablespoon, teaspoon=get_from_tablespoon(u)
-    if u_m=="c":
-        cup=u
-        tablespoon=0
-        teaspoon=0
+    if u_m == "a": cup, tablespoon, teaspoon = get_from_teaspoon(u)
+    if u_m == "b": cup, tablespoon, teaspoon = get_from_tablespoon(u)
+    if u_m == "c":
+        cup = u
+        tablespoon = 0
+        teaspoon = 0
     return f"{cup} cups, {tablespoon} tablespoon, {teaspoon} teaspoon"
 
+
 def get_from_teaspoon(u):
-    cup=u//48
-    tablespoon=u%48//3
-    teaspoon=u-(48*cup+3*tablespoon)
-    return cup,tablespoon,teaspoon
+    cup = u // 48
+    tablespoon = u % 48 // 3
+    teaspoon = u - (48 * cup + 3 * tablespoon)
+    return cup, tablespoon, teaspoon
+
 
 def get_from_tablespoon(u):
     cup = u // 16
-    tablespoon=u-(16*cup)
-    return cup,tablespoon,0
+    tablespoon = u - (16 * cup)
+    return cup, tablespoon, 0
+
 
 if __name__ == '__main__':
-    units=int(input("Please enter the number of units to convert: "))
-    unit_measure=input("Please enter unit measure of the units to convert: "\
-                           "\n (a) Teaspoon\n (b) Tablespoon\n (c) Cup: \n")
+    units = int(input("Please enter the number of units to convert: "))
+    unit_measure = input("Please enter unit measure of the units to convert: " \
+                         "\n (a) Teaspoon\n (b) Tablespoon\n (c) Cup: \n")
     print(reduce_measure(units, unit_measure))
