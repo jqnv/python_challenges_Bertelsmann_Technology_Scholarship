@@ -6,7 +6,8 @@
 # to sort the list.
 
 def sorted_order(num):
-    for i in num.sort():
+    num.sort()
+    for i in num:
         print(i)
 
 
@@ -14,7 +15,7 @@ if __name__ == '__main__':
     num = []
     while True:
         num.append(int(input("Please enter an integer number into the list: ")))
-        if num[len(num) - 1] == 0:
+        if num[-1] == 0:
             num.pop()
             break
     sorted_order(num)
