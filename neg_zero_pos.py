@@ -7,9 +7,8 @@
 
 
 def neg_zero_positives():
-    is_blank = True
     neg, zero, pos = list(), list(), list()
-    while is_blank:
+    while True:
         element = input("Please enter a number: ")
         if element == "":
             break
