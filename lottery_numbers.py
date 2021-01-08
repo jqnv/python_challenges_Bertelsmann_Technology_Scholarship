@@ -10,7 +10,7 @@ def lottery_numbers():
     num_list = []
 
     # Generate list of numbers between 1 and 49
-    while len(num_list) < 7:
+    while len(num_list) < 6:
         num = randint(1, 49)
 
         # Check if already exist to avoid duplicates
