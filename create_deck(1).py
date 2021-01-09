@@ -9,7 +9,7 @@
 
 def createDeck():
     # Create lists with first and second characters of cards
-    first_char_list = list(str(x) for x in range(1, 10)) + ["T", "J", "Q", "K", "A"]
+    first_char_list = list(str(x) for x in range(2, 10)) + ["T", "J", "Q", "K", "A"]
     second_char = ["s", "h", "d", "c"]
 
     # Create an empty list
