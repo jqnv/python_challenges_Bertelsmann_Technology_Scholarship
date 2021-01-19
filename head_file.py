@@ -10,14 +10,22 @@ from sys import argv
 
 def head_file():
     try:
+
+        # Assigning parameter on command line to variable
         file_1 = argv[1]
-        with open(file_1, mode="r") as my_file:  # close the file automatically
+
+        # Open file on read mode with alias my_file
+        with open(file_1, mode="r") as my_file:
+
+            # Print 10 lines
             for i in range(10):
                 line = next(my_file).strip()
                 print(line)
-
+    # Error if file not found
     except FileNotFoundError as err:
         print("File does not exist")
+
+    # Error if parameter not entered
     except IndexError as err:
         print("File name was not provided")
 
