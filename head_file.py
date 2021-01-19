@@ -3,6 +3,8 @@
 # Display an appropriate error message if the file requested by the user does not exist or if the command line
 # parameter is omitted.
 # You can use the attached "elements.txt" file if you need a file to work with.
+
+# To run the file at the command line Prompt> python head_file.py elements.txt
 from sys import argv
 
 
