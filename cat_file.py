@@ -4,6 +4,8 @@
 # Create a Python program that performs this task. It should generate an appropriate error message for any file that
 # cannot be displayed, and then proceed to the next file. Display an appropriate error message if your program is
 # started without any command line parameters.
+
+# To run the file at the command line Prompt> python cat_file.py text1.txt text2.txt
 from sys import argv
 from collections import deque
 
