@@ -38,7 +38,7 @@ def remove_comments():
                     # Write to output file
                     my_file.write(line)
             my_file.write("\n")
-
+    # Print a message if file open fails
     except IOError:
         print(f"Failed to open file {argv[1]}")
 

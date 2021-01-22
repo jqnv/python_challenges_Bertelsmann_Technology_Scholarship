@@ -1,4 +1,4 @@
-Hi this is the beginning of the file
+Hi! This is the beginning of the file
 # This comment should disappear
 But this line should stay
 # This also most be deleted
