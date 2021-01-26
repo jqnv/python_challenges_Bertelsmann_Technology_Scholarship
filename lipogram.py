@@ -37,6 +37,5 @@ def lipogram():
     except IOError:
         print(f"Failed to open {argv[1]} file ")
 
-
 if __name__ == '__main__':
     lipogram()
