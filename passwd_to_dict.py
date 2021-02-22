@@ -9,12 +9,18 @@
 # and the values are the users’ IDs.
 
 def passwd_to_dict():
+
+    #Initialize an empty dictionary to store the username and ID number
     my_dict = {}
-    # Open the file using and alias
+
+    # Open the file using an alias
     with open("passwd.txt") as my_file:
-        # Print the content of last 10 lines using deque
+
+        # Store each line of the file into line variable
         for line in my_file:
             if line.startswith("#") == False and line.strip() != "":
+
+                # Store all elements in each line inside the list text and store it to the dictionary
                 text = line.split(":")
                 my_dict.update({text[0]: text[2]})
         return (my_dict)
